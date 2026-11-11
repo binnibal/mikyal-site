@@ -9,3 +9,6 @@
 بيترفع بـ `tool/release_site.sh`.
 
 الخطوط: Noto Sans Arabic وNoto Sans، رخصة SIL OFL (`fonts/OFL-NotoSans.txt`).
+
+بعد أي تعديل على `style.css` أو `site.js` أو `demo.js`: غيّر رقم `?v=` بروابطهم بالصفحات الثلاث،
+عشان المتصفح ياخد الملف الجديد فوراً بدل النسخة المخزّنة.
