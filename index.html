@@ -22,9 +22,9 @@
 <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/arabic-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=202611111452">
-<script src="site.js?v=202611111452" defer></script>
-<script src="demo.js?v=202611111452" defer></script>
+<link rel="stylesheet" href="style.css?v=202611111930">
+<script src="site.js?v=202611111930" defer></script>
+<script src="demo.js?v=202611111930" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -57,6 +57,7 @@
   <symbol id="i-sync" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></symbol>
   <symbol id="i-text" viewBox="0 0 24 24"><path fill="currentColor" d="M9 4v3h5v12h3V7h5V4H9zm-6 8h3v7h3v-7h3V9H3v3z"/></symbol>
   <symbol id="i-people" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol>
+  <symbol id="i-desktop" viewBox="0 0 24 24"><path fill="currentColor" d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h6v2H8v2h8v-2h-2v-2h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11z"/></symbol>
   <symbol id="i-backup" viewBox="0 0 24 24"><path fill="currentColor" d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A6 6 0 0 0 6 20h13a5 5 0 0 0 .35-9.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></symbol>
 </svg>
 <a class="skip" href="#main">انتقل للمحتوى</a>
@@ -117,7 +118,10 @@
     <div class="wrap">
       <ul class="trust">
         <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-wifi"/></svg></span><span><strong>شغّال لو النت قاطع</strong>ولما يرجع بيرفع لحاله</span></li>
-        <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span><span><strong>بياناتك محفوظة</strong>على جوالك ونسخة محمية</span></li>
+        <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-backup"/></svg></span><span><strong>محفوظة على السحابة</strong>إذا ضاع جوالك أو خرب، بياناتك بترجع</span></li>
+        <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span><span><strong>بياناتك إلك</strong>ما بنبيعها ولا بنشاركها مع حدا</span></li>
+        <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg></span><span><strong>موظفينك معك</strong>كل واحد على جواله، وإنت بتقرر شو بيشوف</span></li>
+        <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-desktop"/></svg></span><span><strong>ويندوز قريباً</strong>نسخة للكمبيوتر واللابتوب جاية</span></li>
         <li><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg></span><span><strong>إذا علقت، ابعتلنا</strong>بنرد عليك واتساب بالعربي</span></li>
       </ul>
     </div>
@@ -174,7 +178,7 @@
         <ul class="checks">
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>كل موظف على جواله، وإنت بتقرر شو بيشوف.</span></li>
           <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>البيعة اللي بيعملها الموظف بتوصل لجوالك.</span></li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>على اللابتوب الشاشة أوسع، والماسح بيشتغل عليه.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>نسخة ويندوز للابتوب جاية قريباً: شاشة أوسع، والماسح بيشتغل عليها.</span></li>
         </ul>
       </div>
       <div class="laptop-col">
@@ -240,11 +244,19 @@
       </details>
       <details>
         <summary>وين بتروح بياناتي؟</summary>
-        <p>على جوالك، ونسخة محمية على Firebase من Google عشان ما تضيع وتوصل لأجهزتك. ما حدا غيرك بيشوفها وما بنبيعها لحدا. التفاصيل في <a href="privacy.html">سياسة الخصوصية</a>.</p>
+        <p>على جوالك، ونسخة محمية على السحابة (Firebase من Google) عشان ما تضيع وتوصل لأجهزتك. ولا محل ثاني بيقدر يشوفها، وما بنبيعها ولا بنشاركها مع حدا، وإحنا ما بنفتحها إلا إذا طلبت مساعدة أو لإصلاح خطأ. التفاصيل في <a href="privacy.html">سياسة الخصوصية</a>.</p>
+      </details>
+      <details>
+        <summary>إذا ضاع جوالي أو خرب، بتروح بياناتي؟</summary>
+        <p>لا. كل شي بتسجّله بينرفع على السحابة أول ما يكون في نت. نزّل مكيال على الجوال الجديد وادخل بنفس الإيميل، وبترجعلك كل بياناتك. إذا علقت ابعتلنا واتساب.</p>
       </details>
       <details>
         <summary>كيف بضيف موظف؟</summary>
         <p>«المزيد» ثم «الموظفون» ثم «دعوة موظف». الموظف بنزّل مكيال على جواله، وإنت بتوافق عليه وبتختار شو بيشوف.</p>
+      </details>
+      <details>
+        <summary>في نسخة للكمبيوتر؟</summary>
+        <p>نسخة ويندوز جاية قريباً. لحد ما تطلع، مكيال بيشتغل على جوالات أندرويد.</p>
       </details>
       <details>
         <summary>كيف بحدّثه؟</summary>

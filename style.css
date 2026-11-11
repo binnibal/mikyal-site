@@ -152,7 +152,7 @@ p { margin: 0 0 var(--s4); }
 
 /* Trust strip */
 .trust-sec { padding: 0 0 var(--s7); background: var(--bg); }
-.trust { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--s4); }
+.trust { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--s4); }
 .trust li { display: flex; align-items: center; gap: var(--s3); background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); padding: var(--s4); box-shadow: var(--shadow); }
 .ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--primary-soft); color: var(--primary); flex: none; }
 .ico .icon { width: 26px; height: 26px; }
