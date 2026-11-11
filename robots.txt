@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://binnibal.github.io/mikyal-site/sitemap.xml
